@@ -57,7 +57,7 @@ let initializeTimer = () => {
             
             recess = !recess;
         }
-    }, 10)
+    }, 1000);
 }
 
 let resetTimer = () => {
