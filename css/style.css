@@ -1,0 +1,62 @@
+body {
+    background-color: #D32F2F;
+}
+
+/*Color Palette*/
+.dark-primary-color    { background: #D32F2F; }
+.default-primary-color { background: #F44336; }
+.light-primary-color   { background: #FFCDD2; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #00BCD4; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 3.5em;
+    color: #FFF;
+}
+
+.btn {
+    background-color: #00BCD4;
+}
+
+.buttons {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#timer {
+    color: #fff;
+    font-size: 7.5em;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+#index-circle {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    color: #212121;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    font-family: sans-serif;
+    line-height: 60px;
+    text-shadow: 1px 1px 2px #444;
+    transition: 1s, color 0.5s;
+}
+
+#index-circle.animate {
+    
+    transform: scale(1.5);
+    color: palegoldenrod;
+}
