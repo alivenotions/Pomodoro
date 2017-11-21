@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'aqua';
-    src: url(D:/Practice/Pomodoro/fonts/aqua.ttf) format("truetype");
+    src: url(../fonts/aqua.ttf) format("truetype");
 }
 
 body {
