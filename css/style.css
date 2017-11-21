@@ -1,12 +1,17 @@
+@font-face {
+    font-family: 'aqua';
+    src: url(D:/Practice/Pomodoro/fonts/aqua.ttf) format("truetype");
+}
+
 body {
     background-color: #f4f4f4;
+    font-family: 'aqua', 'Raleway', sans-serif;
 }
 
 header {
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 3.5em;
     color: #373737;
@@ -15,6 +20,8 @@ header {
 .btn {
     background-color: #dcd0c0;
     color: #373737;
+    font-family: 'Raleway';
+    font-weight: bold;
 }
 
 .btn:hover {
@@ -44,7 +51,6 @@ header {
     text-align: center;
     font-weight: bold;
     font-size: 3em;
-    font-family: sans-serif;
     line-height: 60px;
     text-shadow: 1px 1px 2px #dcd0c0;
     transition: 1s, color 0.5s;
