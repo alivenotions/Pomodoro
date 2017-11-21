@@ -73,6 +73,43 @@ footer {
     display: none;
 }
 
+.fixed-action-btn {
+    font-family: 'Raleway';
+}
+
+.fixed-action-btn>a {
+    background-color: #373737;
+}
+
+.fixed-action-btn>a:hover {
+    background-color: #5A5858;
+}
+
+.fixed-action-btn ul li:nth-child(1) {
+    background-color: #9E936F;
+}
+
+.fixed-action-btn ul li:nth-child(1):hover {
+    background-color: #c0b283;
+}
+
+.fixed-action-btn ul li:nth-child(2) {
+    background-color: #BDB4A8;
+}
+
+.fixed-action-btn ul li:nth-child(2):hover {
+    background-color: #c0b283;
+}
+
+.fixed-action-btn ul li:nth-child(3) {
+    background-color: #dcd0c0;
+}
+
+.fixed-action-btn ul li:nth-child(3):hover {
+    background-color: #c0b283;
+}
+
+
 @media only screen and (max-width: 640px) {
     #index-circle {
         display: block;
