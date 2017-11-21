@@ -2,6 +2,7 @@ let pomodoroSession = 1;
 let recess = false;
 let session = 0;
 
+const audioCtx = new (window.AudioContext || window.webkitAudioContext);
 const startButton = document.querySelector('.buttons a:nth-child(1)');
 const resetButton = document.querySelector('.buttons a:nth-child(2)');
 const timer = document.getElementById('timer');
@@ -68,8 +69,6 @@ let resetTimer = () => {
     indexCircle.innerHTML = 0;
     startButton.classList.remove('disabled');
 }
-
-const audioCtx = new (window.AudioContext || window.webkitAudioContext);
 
 let beep = () => {
     let oscillator = audioCtx.createOscillator();
