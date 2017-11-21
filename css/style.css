@@ -1,16 +1,6 @@
 body {
-    background-color: #D32F2F;
+    background-color: #f4f4f4;
 }
-
-/*Color Palette*/
-.dark-primary-color    { background: #D32F2F; }
-.default-primary-color { background: #F44336; }
-.light-primary-color   { background: #FFCDD2; }
-.text-primary-color    { color: #FFFFFF; }
-.accent-color          { background: #00BCD4; }
-.primary-text-color    { color: #212121; }
-.secondary-text-color  { color: #757575; }
-.divider-color         { border-color: #BDBDBD; }
 
 header {
     width: 90%;
@@ -19,11 +9,16 @@ header {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 3.5em;
-    color: #FFF;
+    color: #373737;
 }
 
 .btn {
-    background-color: #00BCD4;
+    background-color: #dcd0c0;
+    color: #373737;
+}
+
+.btn:hover {
+    background-color: #c0b283;
 }
 
 .buttons {
@@ -32,18 +27,18 @@ header {
 }
 
 #timer {
-    color: #fff;
+    color: #373737;
     font-size: 7.5em;
     margin: 0 auto;
     text-align: center;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px #dcd0c0;
 }
 
 #index-circle {
     position: fixed;
     width: 60px;
     height: 60px;
-    color: #212121;
+    color: #373737;
     top: 10px;
     left: 10px;
     text-align: center;
@@ -51,12 +46,12 @@ header {
     font-size: 3em;
     font-family: sans-serif;
     line-height: 60px;
-    text-shadow: 1px 1px 2px #444;
+    text-shadow: 1px 1px 2px #dcd0c0;
     transition: 1s, color 0.5s;
 }
 
 #index-circle.animate {
     
-    transform: scale(1.5);
-    color: palegoldenrod;
+    transform: scale(1.2);
+    color: #c0b283;
 }
