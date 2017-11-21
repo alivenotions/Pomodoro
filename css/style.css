@@ -5,15 +5,17 @@
 
 body {
     background-color: #f4f4f4;
-    font-family: 'aqua', 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 3.5em;
+    font-family: 'aqua', 'Raleway', sans-serif;
     color: #373737;
 }
 
@@ -36,6 +38,7 @@ header {
 #timer {
     color: #373737;
     font-size: 7.5em;
+    font-family: 'aqua', 'Raleway', sans-serif;
     margin: 0 auto;
     text-align: center;
     text-shadow: 1px 1px 1px #dcd0c0;
@@ -51,6 +54,7 @@ header {
     text-align: center;
     font-weight: bold;
     font-size: 3em;
+    font-family: 'aqua', 'Raleway', sans-serif;
     line-height: 60px;
     text-shadow: 1px 1px 2px #dcd0c0;
     transition: 1s, color 0.5s;
@@ -102,7 +106,7 @@ footer {
 }
 
 .fixed-action-btn ul li:nth-child(3) {
-    background-color: #dcd0c0;
+    background-color: #C7BDAF;
 }
 
 .fixed-action-btn ul li:nth-child(3):hover {
