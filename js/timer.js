@@ -1,12 +1,14 @@
 let pomodoroSession = 1;
 let recess = false;
 let session = 0;
+let longRecessInterval = 3;
 
 const audioCtx = new (window.AudioContext || window.webkitAudioContext);
 const startButton = document.querySelector('.buttons a:nth-child(1)');
 const resetButton = document.querySelector('.buttons a:nth-child(2)');
 const timer = document.getElementById('timer');
 const indexCircle = document.getElementById('index-circle');
+const sessionButton = document.querySelector('.fixed-action-btn > ul');
 
 let toggleIndexCircleClass = () => {
     indexCircle.classList.add('animate');
@@ -40,12 +42,12 @@ let initializeTimer = () => {
             
             beep();
             
-            if(!recess && pomodoroSession%3 !== 0) {
+            if(!recess && pomodoroSession%(longRecessInterval) !== 0) {
                 indexCircle.textContent = 'B';
                 toggleIndexCircleClass();
                 ++pomodoroSession;
                 minutes = 5;
-            } else if(!recess && pomodoroSession%3 === 0){
+            } else if(!recess && pomodoroSession%(longRecessInterval) === 0){
                 indexCircle.textContent = 'B';
                 toggleIndexCircleClass();
                 ++pomodoroSession;
@@ -82,5 +84,10 @@ let beep = () => {
     setTimeout(() => { oscillator.stop() }, 1000);
 }
 
+let changeSessionInterval = (event) => {
+    longRecessInterval = event.target.textContent;
+}
+
 startButton.addEventListener('click', initializeTimer);
 resetButton.addEventListener('click', resetTimer);
+sessionButton.addEventListener('click', changeSessionInterval);
